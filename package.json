@@ -3,18 +3,18 @@
     "version": "1.4.0",
     "license": "GPL-2.0",
     "Original author": "Daniel Vandal",
-    "Maintained by": "Musclesonvacation",
+    "Maintained by": "Aiwe",
     "repository": {
         "type": "git",
-        "url": "https://github.com/muscleman/cryptonote-nodejs-pool.git"
+        "url": "https://github.com/aivve/cryptonote-nodejs-pool.git"
     },
     "dependencies": {
         "async": "1",
         "base58-native": "*",
         "bignum": "*",
         "cli-color": "*",
-        "cryptoforknote-util": "git://github.com/MoneroOcean/node-cryptoforknote-util.git",
-        "cryptonight-hashing": "git://github.com/ryo-currency/node-cryptonight-hashing.git",
+        "cryptoforknote-util": "git://github.com/aivve/node-cryptoforknote-util.git",
+        "cryptonight-hashing": "git://github.com/aivve/node-cryptonight-hashing.git",
         "dateformat": "*",
         "mailgun.js": "*",
         "node-telegram-bot-api": "*",
