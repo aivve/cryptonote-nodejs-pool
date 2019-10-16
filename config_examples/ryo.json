@@ -1,16 +1,16 @@
 {
     "poolHost": "your.pool.host",
 
-    "coin": "sumokoin",
-    "symbol": "SUMO",
+    "coin": "ryo",
+    "symbol": "Ryo",
     "coinUnits": 1000000000,
     "coinDecimalPlaces": 4,
     "coinDifficultyTarget": 240,
 
     "daemonType": "default",
-    "cnAlgorithm": "cryptonight",
-    "cnVariant": 13,
-    "cnBlobType": 0,
+    "cnAlgorithm": "cryptonight_gpu",
+    "cnVariant": null,
+    "cnBlobType": 4,
 
     "logging": {
         "files": {
@@ -23,13 +23,12 @@
             "colors": true
         }
     },
-    "includeHeight": true,
-    "includeAlgo": "cn/r",
+
     "poolServer": {
         "enabled": true,
         "clusterForks": "auto",
         "poolAddress": "** Your pool wallet address **",
-        "intAddressPrefix": 536986,
+	"addressValidatorBin": "bin/ryo-address-validator",
         "blockRefreshInterval": 1000,
         "minerTimeout": 900,
         "sslCert": "./cert.pem",
@@ -122,6 +121,7 @@
 
     "blockUnlocker": {
         "enabled": true,
+        "useFirstVout": true,
         "interval": 30,
         "depth": 60,
         "poolFee": 0.8,
@@ -148,7 +148,7 @@
 
     "daemon": {
         "host": "127.0.0.1",
-        "port": 19734
+        "port": 13311
     },
 
     "wallet": {
@@ -299,12 +299,6 @@
                 "enabled": true,
                 "updateInterval": 180,
                 "stepInterval": 1800,
-                "maximumPeriod": 86400
-            },
-            "worker_hashrate": {
-                "enabled": true,
-                "updateInterval": 60,
-                "stepInterval": 60,
                 "maximumPeriod": 86400
             },
             "payments": {
